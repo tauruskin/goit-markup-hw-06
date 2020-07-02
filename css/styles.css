@@ -924,7 +924,7 @@ button:focus {
 
 .form-items__input.area:focus + .form-items__label.area,
 .form-items__input.area:not(:placeholder-shown) + .form-items__label.area {
-  transform: translateY(17%);
+  transform: translateY(-10%);
 }
 
 .form-items__input.area{
@@ -932,6 +932,11 @@ button:focus {
   resize: none;
 }
 
+.form-items__label.area{
+  top: 22px;
+  left: 10px;
+
+}
 .form-policy{
   display: inline-block;
   margin-bottom: 20px;
@@ -967,6 +972,7 @@ button:focus {
   color:#2196F3;
 }
 .button.submit-button{
+  
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -983,4 +989,5 @@ button:focus {
   min-height: 50px;
   text-align: center;
   border-radius: 4px;
+  
 }
