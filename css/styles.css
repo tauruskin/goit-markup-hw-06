@@ -926,6 +926,7 @@ button:focus {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.01em;
+  cursor: pointer;
 
   color: #757575;
 }
@@ -939,7 +940,7 @@ button:focus {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-
+  cursor: pointer;
   color: #757575;
 }
 .form-policy__checkbox {
