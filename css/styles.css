@@ -884,11 +884,12 @@ button:focus {
   letter-spacing: 0.01em;
   color: #757575;
   cursor: pointer;
-    padding: 12px 42px;
-    background-color: #fff;
+  padding: 12px 42px;
+  background-color: #fff;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  outline: 0;
 }
 .form-items__input:focus + .form-items__label,
 .form-items__input:not(:placeholder-shown) + .form-items__label{
@@ -912,26 +913,26 @@ button:focus {
   color: #757575;
 }
 
-.form-items__textarea{
-  resize: none;
+.form-items.area{
+  
   margin: 0px;
   margin-bottom: 20px;
   height: 120px;
-  width: 100%;
-  padding: 12px 16px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
-  cursor: pointer;
-
+  width: 100%;  
   color: #757575;
 }
-.form-policy{
 
+.form-items__input.area:focus + .form-items__label.area,
+.form-items__input.area:not(:placeholder-shown) + .form-items__label.area {
+  transform: translateY(17%);
+}
+
+.form-items__input.area{
+  padding-left: 10px;
+  resize: none;
+}
+
+.form-policy{
   display: inline-block;
   margin-bottom: 20px;
   
@@ -964,4 +965,22 @@ button:focus {
 .form-policy__link {
   padding-left: 5px;
   color:#2196F3;
+}
+.button.submit-button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  background-color: var(--accent-color);
+  color: var(--color1);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  min-width: 200px;
+  min-height: 50px;
+  text-align: center;
+  border-radius: 4px;
 }
