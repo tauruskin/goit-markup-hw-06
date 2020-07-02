@@ -799,7 +799,7 @@ button:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 100;
   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(1);
@@ -809,19 +809,18 @@ button:focus {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  transition: all 0.5s linear 0.3s;
+ 
   transform: scale(2);
 }
 
 
 .modal{
   position: absolute;  
-  /* margin: auto; */
+  
   max-width: 528px;
   max-height: 581px;
   background: #ffffff;
   
-  /* border: 1px solid #2196F3; */
   border-radius: 4px;
   top: 50%;
   left: 50%;
@@ -873,13 +872,11 @@ button:focus {
 .form-items{
   display: block;
   position: relative;
-  margin-bottom: 28px;
-  
+  margin-bottom: 28px;  
 }
 
 .form-items__input {
-  width: 100%;
-   
+  width: 100%;   
   font-size: 14px;
   letter-spacing: 0.01em;
   color: #757575;
@@ -895,7 +892,6 @@ button:focus {
 .form-items__input:not(:placeholder-shown) + .form-items__label{
   color: var(--accent-color);
   transform: translate(-30px, -40px);
-
 }
 .form-items:focus-within > .btn-icon{
   fill:#2196F3;
@@ -913,8 +909,7 @@ button:focus {
   color: #757575;
 }
 
-.form-items.area{
-  
+.form-items.area{  
   margin: 0px;
   margin-bottom: 20px;
   height: 120px;
@@ -922,9 +917,23 @@ button:focus {
   color: #757575;
 }
 
-.form-items__input.area:focus + .form-items__label.area,
-.form-items__input.area:not(:placeholder-shown) + .form-items__label.area {
-  transform: translateY(-10%);
+.form-items__label.area{
+  
+  top: 12px;
+  left: 12px;
+  position: absolute;  
+  transform: translateY(-50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  font-style: normal;
+  color: #757575;
+}
+
+.form-items__input:focus + .form-items__label.area,
+.form-items__input:not(:placeholder-shown) + .form-items__label.area {
+  transform: translateY(-35px);
 }
 
 .form-items__input.area{
@@ -932,11 +941,7 @@ button:focus {
   resize: none;
 }
 
-.form-items__label.area{
-  top: 22px;
-  left: 10px;
 
-}
 .form-policy{
   display: inline-block;
   margin-bottom: 20px;
