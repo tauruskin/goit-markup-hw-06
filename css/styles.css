@@ -961,8 +961,9 @@ button:focus {
 }
 .btn-icon__checkbox{
   position: relative;
-  top: 50%;
+  top: -3px;
   transform: translateY(5px);
+  cursor: pointer;
   border-radius: 2px;
   border: 2px solid var(--primary-text-color);
   background-origin: border-box;
@@ -977,7 +978,7 @@ button:focus {
   color:#2196F3;
 }
 .button.submit-button{
-  
+  cursor: pointer;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -989,7 +990,7 @@ button:focus {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  cursor: pointer;
+  
   min-width: 200px;
   min-height: 50px;
   text-align: center;
