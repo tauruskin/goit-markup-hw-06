@@ -815,15 +815,14 @@ button:focus {
 
 
 .modal{
-  
   position: absolute;  
-  margin: auto;
+  /* margin: auto; */
   max-width: 528px;
   max-height: 581px;
-  background-color: #ffffff;
+  background: #ffffff;
   
-  border: 1px solid #2196F3;
-  border-radius: 15px;
+  /* border: 1px solid #2196F3; */
+  border-radius: 4px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -911,10 +910,9 @@ button:focus {
   font-style: normal;
   color: #757575;
 }
-.form-items__area{
-  resize: none;
-}
+
 .form-items__textarea{
+  resize: none;
   margin: 0px;
   margin-bottom: 20px;
   height: 120px;
